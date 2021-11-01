@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+
+    <a-sky src = "suraj-shrikhande-abandoned-railway-station-test-suraj-shrikhande.jpg"></a-sky>
+
+    <a-camera wasd-controls-enabled="true" position="0 8 20"></a-camera>
+
+    <!-------------------------------------------Asset Management------------------------------------------->
+    <a-assets>      
+
+      <!--Add Code Here-->
+
+    </a-assets>
+    
+    
+    <!--------------------------------------OBJ Models----------------------------------------------------------->   
+  
+    <a-asset-item id = "table-obj" src = "./asset/hehe.obj"></a-asset-item>
+
+    <a-asset-item id = "table-mtl" src = "./asset/objjjwfngf.mtl"></a-asset-item>
+
+
+    
+      
+
+    
+    <a-entity obj-model = "obj: #table-obj; mtl: #table-mtl" position = "5 0 0" rotation = "-90 -40 0" scale = "0.1 0.1 0.1"></a-entity>
+  </a-scene>
+</body>
+
+</html>
